@@ -1,0 +1,46 @@
+button {
+  margin-top: 10px;
+}
+
+#clear-text {
+  margin-bottom: 10px;
+}
+
+.hover {
+  background-color: red;
+  color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.toggle {
+  background-color: white;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  animation: fadeOut 1s;
+}
+
+.visible {
+  display: block;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
