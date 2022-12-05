@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-<script src="calculadora.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="primerNumero" placeholder="Primer Número" />
+      <br />
+      <input type="" id="segundoNumero" placeholder="Segundo Número" />
+      <br />
+      <input type="button" onclick="sumar()" value="Sumar" />
+      <input type="button" onclick="restar()" value="Restar" />
+      <input type="button" onclick="multiplicar()" value="Multiplicar" />
+      <input type="button" onclick="dividir()" value="Dividir" />
+    </form>
+    <p>El resultado es:</p>
+    <p id="resultado"></p>
+    <p></p>
+  </body>
+
+  <script src="calculadora.js"></script>
 </html>

@@ -2,6 +2,30 @@
 // Escriba un programa que reciba y genere una matriz del tamaño de la entrada y que
 // contenga una X representada por medio de ‘x’.
 
+function ej1(tamano) {
+  let matriz = [];
+  for (let i = 0; i < tamano; i++) {
+    matriz[i] = [];
+    for (let j = 0; j < tamano; j++) {
+      // @ts-ignore
+      matriz[i][j] = ' ';
+    }
+  }
+  
+  for (let i = 0; i < tamano; i++) {
+    for (let j = 0; j < tamano; j++) {
+      if (i === j || i + j === tamano - 1) {
+        // @ts-ignore
+        matriz[i][j] = '*';
+      }
+    }
+  }
+  for (let i = 0; i < tamano; i++) {
+    console.log(matriz[i].join(' '));
+  }
+}
+// ingrese un numero para que se genere su matriz
+ej1(6);
 
 
 
@@ -34,8 +58,8 @@ function ej2(arreglo1, arreglo2) {
 }
 
 
-let arreglo1 = [6, 8, 7, 8, 9];
-let arreglo2 = [1, 2, 3, 4, 5];
+let arreglo1 = [1, 2, 3, 4, 5];
+let arreglo2 = [6, 8, 7, 8, 9];
 
 ej2(arreglo1, arreglo2);
 
@@ -44,7 +68,7 @@ function main (){
   // @ts-ignore
   ej1()
   // @ts-ignore
-  ej2(N,M)
+  ej2()
   // @ts-ignore
 }
 main ()
